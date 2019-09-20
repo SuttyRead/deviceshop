@@ -23,7 +23,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Pattern(regexp = "$(login.patter.regexp)")
+    @Pattern(regexp = "^[a-zA-Z][a-zA-Z0-9-_\\\\.]{1,20}$\"")
     private String username;
 
     @Pattern(regexp = "(?=^.{8,}$)((?=.*\\d)|(?=.*\\W+))(?![.\\n])(?=.*[A-Z])(?=.*[a-z]).*$")
@@ -45,5 +45,4 @@ public class User {
 
     @Enumerated(value = EnumType.STRING)
     private Role role;
-
 }

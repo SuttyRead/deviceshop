@@ -3,7 +3,6 @@ package com.deviceshop.domain;
 import com.deviceshop.model.Role;
 import com.deviceshop.model.User;
 import org.junit.Test;
-import org.springframework.http.HttpMethod;
 import org.springframework.web.client.RestTemplate;
 
 import java.time.LocalDate;
